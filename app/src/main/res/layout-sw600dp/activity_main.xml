@@ -9,49 +9,52 @@
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="388dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
         android:onClick="showToast"
-        android:text="@string/button_label_toast"
-        android:textColor="@android:color/white"
-        android:textSize="60sp"
+        android:text="toast"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/button_count"
-        android:layout_width="388dp"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="204dp"
+        android:onClick="Zero"
+        android:text="Zero"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
         android:onClick="countUp"
-        android:text="@string/button_label_count"
-        android:textColor="@android:color/white"
-        android:textSize="60sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_toast"
-        app:layout_constraintStart_toEndOf="@+id/button_toast" />
+        android:text="count"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        tools:layout_editor_absoluteY="72dp" />
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#FFFF00"
+        android:layout_width="720dp"
+        android:layout_height="680dp"
+        android:layout_marginEnd="52dp"
+        android:background="#FFEB3B"
         android:gravity="center_vertical"
-        android:text="@string/count_initial_value"
+        android:text="0"
         android:textAlignment="center"
         android:textColor="#3F51B5"
-        android:textSize="200sp"
+        android:textSize="160sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast"
-        tools:ignore="RtlCompat" />
+        tools:ignore="RtlCompat"
+        tools:layout_editor_absoluteY="220dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
